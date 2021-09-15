@@ -3,12 +3,15 @@ function App() {
   return (
     <div>
       <h1>Hello</h1>
-      <Movie />
+      <Food fav="Kimchi" />
+      <Food fav="a" />
+      <Food fav="b" />
     </div>
   );
 }
 
-function Movie(){
-  return <h1>I like potato</h1>
+function Food(foo){
+  const { fav } = foo
+  return <h1>I like {fav}</h1>
 }
 export default App;
