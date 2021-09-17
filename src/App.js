@@ -1,17 +1,13 @@
-
 function App() {
   return (
     <div>
       <h1>Hello</h1>
-      <Food fav="Kimchi" />
-      <Food fav="a" />
-      <Food fav="b" />
+      <Food fav="kimchi" someting = {true} papapa = {['hello', 1,2, true]}/>
     </div>
-  );
+  )
 }
 
-function Food(foo){
-  const { fav } = foo
-  return <h1>I like {fav}</h1>
+function Food(){
+  return <h1>I like potaoa</h1>
 }
 export default App;
