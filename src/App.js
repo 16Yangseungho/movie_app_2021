@@ -8,6 +8,7 @@ function App() {
 }
 
 function Food(foo){
-  return <h1>I like {foo.fav}</h1>
+  const { fav } = foo
+  return <h1>I like {fav}</h1>
 }
 export default App;
