@@ -7,7 +7,8 @@ function App() {
   )
 }
 
-function Food(){
+function Food(props){
+  console.log(props);
   return <h1>I like potaoa</h1>
 }
 export default App;
