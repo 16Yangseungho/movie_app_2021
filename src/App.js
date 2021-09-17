@@ -1,4 +1,3 @@
-
 const foodLike = [
   {
     name: "chiken", 
@@ -9,11 +8,20 @@ const foodLike = [
     image: "https://www.the-pr.co.kr/news/photo/202009/45637_69367_331.jpg"
   } 
 ]
+
+//function renderFood(dish){
+  //return (
+    //<Food name={dish.name} picture={dish.image} />
+  //)
+//}
+
+const renderFood = dish => <Food name={dish.name} picture={dish.image} />
+
 function App() {
   return (
     <div>
        {
-         foodLike.map(dish => (<Food name={dish.name} picture={dish.image} />))
+         foodLike.map(renderFood)
        }
     </div>
   )
