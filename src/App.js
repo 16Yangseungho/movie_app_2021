@@ -1,4 +1,4 @@
-import Potato from "./Potato"
+
 
 const foodLike = [
   {
@@ -15,7 +15,6 @@ function App() {
     <div>
       <h1>Hello</h1>
       <Food fav="kimchi" />
-      <Potato foo="you" />
     </div>
   )
 }
