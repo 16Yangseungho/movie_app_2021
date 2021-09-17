@@ -8,7 +8,6 @@ function App() {
 }
 
 function Food(foo){
-  console.log(foo);
-  return <h1>I like potaoa</h1>
+  return <h1>I like {foo.fav}</h1>
 }
 export default App;
