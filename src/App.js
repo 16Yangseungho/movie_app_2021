@@ -4,12 +4,12 @@ const foodLike = [
   {
     id: 1,
     name: "chiken", 
-    image: "https://health.chosun.com/site/data/img_dir/2021/03/31/2021033102448_0.jpg"
+    image: "image/chiken.jpg"
   }, 
   {
     id:2,
     name: "ham", 
-    image: "https://www.the-pr.co.kr/news/photo/202009/45637_69367_331.jpg"
+    image: "image/ham.jpg"
   } 
 ]
 
