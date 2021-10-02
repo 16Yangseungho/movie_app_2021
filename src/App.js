@@ -1,48 +1,7 @@
-import PropTypes from 'prop-types'
+import {Component} from 'react'
 
-const foodLike = [
-  {
-    id: 1,
-    name: "chiken", 
-    image: "image/chiken.jpg"    
-    rating: 5.0
-  }, 
-  {
-    id:2,
-    name: "ham", 
-    image: "image/ham.jpg"
-    rating: 5.0
-  } 
-]
-
-function App() {
-  return (
-    <div>
-       {
-         foodLike.map(dish => (<Food
-          key={dish.id}
-          name={dish.name}
-          picture={dish.image}
-          alt={dish.alt}
-          rating={dish.rating}          
-          />))
-       }
-    </div>
-  )
+class App extends React.Component {
+    
 }
 
-Food.PropTypes = {
-  name: PropTypes.string,
-  picture: PropTypes.string,
-  rating: PropTypes.string
-}
-
-function Food({name, picture}){  
-  return(
-    <div>
-   <h1>I like {name}</h1>
-   <img src={picture} alt={name} />
-  </div>
-  )  
-}
-export default App;
+export default App
