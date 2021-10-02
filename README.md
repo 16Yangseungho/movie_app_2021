@@ -7,6 +7,7 @@
 4. string은 반드시 보내야한다 내용도 string. number는 반드시 보낼필요가 없다. 만약 보낸다면 number타입 이여야 한다.</br>
 5. prop-types의 다양한 사용방법은 http://github.com/facebook/prop-types 참고. </br>
 6. import {Component} from에서 더 react에서 가져올 것이 있으면 {Component,가져올것}으로 사용하면 된다.</br>
+7. react에서 리턴은 무조건 하나의 태그(<div></div>)로 뭉쳐야한다.
 
 ***
 
