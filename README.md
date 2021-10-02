@@ -8,7 +8,8 @@
 5. prop-types의 다양한 사용방법은 http://github.com/facebook/prop-types 참고. </br>
 6. import {Component} from에서 더 react에서 가져올 것이 있으면 {Component,가져올것}으로 사용하면 된다.</br>
 7. react에서 리턴은 무조건 하나의 태그(<div></div>)로 뭉쳐야한다. </br>
-8. 이벤트를 만들고 onClick함수를 넣어서 호출하면 바뀐다.
+8. 이벤트를 만들고 onClick함수를 넣어서 호출하면 바뀐다.</br>
+9. component를 넣으면 이벤트가 발동할때마다 활동을 알 수 있다.
 ***
 
 ## [ 09월 15일 ]
