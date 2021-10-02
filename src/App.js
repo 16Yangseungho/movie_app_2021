@@ -4,12 +4,14 @@ const foodLike = [
   {
     id: 1,
     name: "chiken", 
-    image: "image/chiken.jpg"
+    image: "image/chiken.jpg"    
+    rating: 5.0
   }, 
   {
     id:2,
     name: "ham", 
     image: "image/ham.jpg"
+    rating: 5.0
   } 
 ]
 
@@ -17,10 +19,22 @@ function App() {
   return (
     <div>
        {
-         foodLike.map(dish => (<Food key={dish.id} name={dish.name} picture={dish.image} />))
+         foodLike.map(dish => (<Food
+          key={dish.id}
+          name={dish.name}
+          picture={dish.image}
+          alt={dish.alt}
+          rating={dish.rating}          
+          />))
        }
     </div>
   )
+}
+
+Food.PropTypes = {
+  name: PropTypes.string,
+  picture: PropTypes.string,
+  rating: PropTypes.string
 }
 
 function Food({name, picture}){  
