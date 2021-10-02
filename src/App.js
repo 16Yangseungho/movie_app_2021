@@ -1,6 +1,17 @@
 import {Component} from 'react'
 
 class App extends Component {
+    constructor(props){
+        super(props)
+        console.log('constructor');
+    }
+    componentDidMount() {
+        console.log('componentDidMount');
+    }
+
+    componentDidUpdata() {
+        console.log('componentDidUpdate')
+    }
     state = {
         count: 0 
     }
@@ -14,6 +25,7 @@ class App extends Component {
     }
 
  render() {
+     console.log('render');
     return (
         <div>
         <h1>Rhe number is: {this.state.count} </h1>
