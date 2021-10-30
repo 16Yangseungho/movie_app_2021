@@ -3,6 +3,16 @@
 
 
 ## [ 10월 27일]
+npm insall react-router-dom 으로 
+routers폴더 생성한 후 Home.js,Home.css,About.js,About.css생성으로 routers폴더에 사용할걸 편하게 정리했다.<br>
+Movie.js에서 key값으로 index를 주고 className으로 'movie-genre'생성
+```jsx
+{genres.map((genre,index) =>{
+    return(
+        <li key={index} className='movie-genre'>{genre}</li>
+    )
+})
+```
 home 밑에 introducthion으로 접속하면 root부터 스캔하여 /home/introduction이 같이 나온다.
 ```jsx
     <Route path='/' component={Home}>
@@ -20,6 +30,17 @@ home 밑에 introducthion으로 접속하면 root부터 스캔하여 /home/intro
          <Route path='/' exact={true} component={Home}>
             <h1>Home</h1>
         </Route>
+```
+about.css를 사용하기 위해서 import './About.css'사용하고 span에서 div로 변경
+```jsx
+import './About.css'
+function About() {
+    return(
+        <div className='about__container'>
+            <h1>Hello About!</h1>
+        </div>
+    )
+} 
 ```
 
 ***
