@@ -1,5 +1,28 @@
 # 양승호 201640124
 
+
+
+## [ 10월 27일]
+home 밑에 introducthion으로 접속하면 root부터 스캔하여 /home/introduction이 같이 나온다.
+```jsx
+    <Route path='/' component={Home}>
+        <h1>Home</h1>
+    </Route>
+    <Route path='/home/introduction'>
+        <h1>introduction</h1>
+    </Route>      
+    <Route path='/about' component={About}>
+        <h1>About</h1>
+```
+/이 들어가면 전부 나오는걸 피하기위해서 exact={true}를 추가하여 수정
+```jsx
+      <HashRouter>
+         <Route path='/' exact={true} component={Home}>
+            <h1>Home</h1>
+        </Route>
+```
+
+***
 ## [ 10월 13일]
 1. 객체키와 객체값이 같으면 생략이 가능하다.  
 2. 한폴더에 전부 넣지말고 컴포넌트를 잘 나눠두는게 편하다.  
