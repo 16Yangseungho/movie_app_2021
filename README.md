@@ -1,7 +1,62 @@
 # 양승호 201640124
 
+## [11월3일]
 
+오류가났을경우
+개인컴퓨터에서는 오류가 없는데 다른컴퓨터에서 오류가 났을때 npm-version으로 확인한다.(버전이 다를경우 오류날때도 있음)</br>
+package.json의 경우는 version range를 사용한다. "express": "~4.16.1“ </br>
+package-lock.json은 package.json 이 변경될 때 마다 업데이트 되는 것으로 좀더 정확한 버전이
+기록되어 있다.
 
+홈에서 영화를 눌렀을때 나오는 링크걸기
+```jsp
+import { Link } from "react-router-dom"
+
+function Navigation() {
+    return (
+        <div>
+        <Link to='/'>Home</Link>
+        <Link to='/about'>About</Link>
+        </div>
+    )
+}
+```
+
+영화 about 만들기
+
+route props를 사용
+consol.log()를 통해 About으로 어떤 props가 넘어오는지 확인한다.
+react-router-dom에서 Route 컴포넌트가 그려줄 컴포넌트에 전달한 props를 확인할 수 있다.
+Route 컴포넌트가 그려줄 컴포넌트에는 항상 이 props가 전달되며, 이 props는 원하는 데이터를 담 아 보낼 수 있다.
+
+function About(props) {
+    console.log(props)
+리다이렉트 기능
+리다이렉트 기능을 사용하기 위해서는 route props의 history 키를 활용해야 한다.
+history키에는 push, go, goBack, goForward와 같은 키가 있으며, 그 키에는 URL을 변경해 주는 함수들이 있다.
+
+push() 함수 사용하기
+``jsp
+class Detail extends React.Component {
+    componentDidMount() {
+        const { location, history } =this.props
+        if ( location.state === undefined ) {
+            history.push('/')
+        }
+    }
+```
+영화 제목 출력하기
+```jsp
+    render () {
+        const { location } = this.props
+        return (
+        <span>{location.state.title}</span>
+        )
+    }
+}
+```
+
+***
 ## [ 10월 27일]
 npm insall react-router-dom 으로 
 routers폴더 생성한 후 Home.js,Home.css,About.js,About.css생성으로 routers폴더에 사용할걸 편하게 정리했다.<br>
