@@ -1,5 +1,8 @@
 # 양승호 201640124
 ## [11월10일]
+branch
+
+
 package.json 가장 밑에 홈페이지 주소 저장
 "homepage":"https://16Yangseungho.github.io/movie_app_2021" 깃허브에서 무료로 나의 페이지를 호스팅할수 있게 만들어준다.(이건 나의 홈페이지)
 사이트 공유를 위해서 설치한것 : npm install gh-pages 
@@ -9,6 +12,8 @@ package.json내부 script에 사용한것
  "predeploy":"npm ren build",
     "deploy":"gh-pages-d build"
 ```
+npm run build을 실행했을시 필요한 폴더가 생성된다.
+내부의 index.html을 실행시키면 관리자모드설정 후 네트워크 활동을 보면 실행된것을 확인 가능하다.
 
 
 ***
