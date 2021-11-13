@@ -1,5 +1,17 @@
 # 양승호 201640124
 
+## [11월10일]
+
+"homepage":"https://16Yangseungho.github.io/movie_app_2021" 깃허브에서 무료로 나의 페이지를 호스팅할수 있게 만들어준다.(이건 나의 홈페이지) 사이트 공유를 위해서 설치한것 : npm install gh-pages
+
+package.json 내부에있는 scripts 밑에 추가한것
+```jsp
+ "predeploy":"npm ren build",
+    "deploy":"gh-pages-d build"
+```
+
+
+***
 ## [11월3일]
 
 오류가났을경우
