@@ -1,7 +1,7 @@
 # 양승호 201640124
 ## [11월17일]
 handleChange는 모든 키보드 입력마다 React의 State를 갱신해서 보여준다. element에서 확인가능
-유저입력 > handleChange > React의 state 갱신 > from element가 React state를 참조 (임시저장)
+유저입력 -> handleChange -> React의 state 갱신 -> from element가 React state를 참조 (임시저장)
 유저 입력을 강제로 대문자로 변경할 경우에도 사용한다.
 ```jsp
     handleChange(event){
