@@ -1,4 +1,37 @@
 # 양승호 201640124
+## [11월17일]
+handleChange는 모든 키보드 입력마다 React의 State를 갱신해서 보여준다. element에서 확인가능
+유저입력 > handleChange > React의 state 갱신 > from element가 React state를 참조 (임시저장)
+유저 입력을 강제로 대문자로 변경할 경우에도 사용한다.
+```jsp
+    handleChange(event){
+        this.setState({value})
+    }
+```
+todo.html을 실행 후 내용을 입력하면 관리자 모드 사용시 즉시 내용이 보이게 해주는 부분
+```jsp
+<input
+    id="new-todo"
+    onChange={this.handleChange}
+    value={this.state.text}
+/>
+```
+todo를 실행 후 내용을 적었다가 지웠을 시 바로 빈칸으로 내용을 저장하는 부분
+```jsp
+    this.setState(state => ({
+      items: state.items.concat(newItem),
+      text: ''
+```
+
+remarkable 설치
+npm install remarkable --save
+
+browser(CDN방식)
+https://www.jsdelivr.com/package/npm/remarkable (오픈소스는 대부분 사용만 하는 용도는 dist에 있을 것이다.)
+https://cdnjs.com/libraries/remarkable
+
+
+***
 ## [11월10일]
 "homepage":"https://16Yangseungho.github.io/movie_app_2021" 깃허브에서 무료로 나의 페이지를 호스팅할수 있게 만들어준다.(이건 나의 홈페이지)
 사이트 공유를 위해서 설치한것 : npm install gh-pages 
