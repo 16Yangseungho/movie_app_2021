@@ -1,4 +1,33 @@
 # 양승호 201640124
+## [12월1일]
+현재시간을 알려주는 시계
+```jsp
+function Clock(props) {
+  return (
+    <div>
+      <h1>Hello, world!</h1>
+      <h2>It is {props.date.toLocaleTimeString()}.</h2>
+    </div>
+  );
+}
+```
+
+클래스 선언-랜더함수-함수복사
+```jsp
+class Clock extends React.Component {
+  render() {
+    return (
+      <div>
+        <h1>Hello, world!</h1>
+        <h2>It is {this.props.date.toLocaleTimeString()}.</h2>
+      </div>
+    );
+  }
+}
+```
+클래스 선언은 React.component에서 받는다. render에서 랜더함수 생성, this.props로 함수복사
+
+***
 ## [11월17일]
 handleChange는 모든 키보드 입력마다 React의 State를 갱신해서 보여준다. element에서 확인가능
 유저입력 -> handleChange -> React의 state 갱신 -> from element가 React state를 참조 (임시저장)
